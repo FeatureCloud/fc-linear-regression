@@ -1,13 +1,3 @@
-fc_linear_regression:
-  input:
-    train: "train.csv"
-    test: "test.csv"
-  output:
-    pred: "pred.csv"
-    test: "test.csv"
-  format:
-    sep: ","
-    label: "TARGET_deathRate"
-  split:
-    mode: "directory" # directory if cross validation was used before, else file
-    dir: "data" # data if cross validation app was used before, else .
+lr-fc:
+    input_name: "data.csv"
+    output_name: "output.csv"
